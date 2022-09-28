@@ -3,6 +3,8 @@ pluginManagement {
     gradlePluginPortal()
     google()
     mavenCentral()
+    jcenter()
+    maven {url uri('./repositories')}
   }
 }
 dependencyResolutionManagement {
@@ -10,8 +12,10 @@ dependencyResolutionManagement {
   repositories {
     google()
     mavenCentral()
+    jcenter()
+    maven {url uri('./repositories')}
   }
 }
 rootProject.name = "MHook"
 include ':app'
-include ':hookplugin'
+include ':hooklpugin'
