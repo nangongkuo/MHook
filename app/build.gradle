@@ -3,6 +3,8 @@ plugins {
   id 'org.jetbrains.kotlin.android'
 }
 
+//apply plugin: 'MHook'
+
 android {
   namespace 'com.zjf.mhook'
   compileSdk 32
@@ -41,4 +43,44 @@ dependencies {
   testImplementation 'junit:junit:4.13.2'
   androidTestImplementation 'androidx.test.ext:junit:1.1.3'
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+  compileOnly "com.google.android.gms:play-services-ads-identifier:16.0.0"
 }
+
+
+//mHookExt {
+//  // 是否处理反射调用,会替换所有反射方法，默认true
+//  hookInvoke = true
+//  hookSwitch = [
+//      "getMacAddress"               : false,
+//      "getMeid2"                    : false,
+//      "getMeid"                     : false,
+//      "getDeviceId2"                : false,
+//      "getDeviceId"                 : false,
+//      "getSubscriberId2"            : false,
+//      "getSubscriberId"             : false,
+//      "getImei2"                    : false,
+//      "getImei"                     : false,
+//      "getSimSerialNumber2"         : false,
+//      "getSimSerialNumber"          : false,
+//      "getLine1Number2"             : false,
+//      "getLine1Number"              : false,
+//      "getHardwareAddress"          : false,
+//      "getAddress"                  : false,
+//      "getSecureString"             : false,
+//      "getString"                   : false,
+//      "getHostAddress"              : false,
+//      "getRunningAppProcesses"      : false,
+//      "isEmulator"                  : true,
+//      "query"                       : false,
+//      "openContactPhotoInputStream" : false,
+//      "openContactPhotoInputStream2": false,
+//      "getAdvertisingIdInfo"        : false,
+//      "logE"                        : false,
+//      "pendingGetActivity"          : true,
+//      "pendingGetActivities"        : true,
+//      "pendingGetBroadcast"         : true,
+//      "pendingGetService"           : true,
+//      "pendingGetForegroundService" : true
+//  ]
+//}
