@@ -84,3 +84,6 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+
+publish-mavencentral.gradle
